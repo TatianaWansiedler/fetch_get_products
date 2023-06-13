@@ -1,3 +1,5 @@
+// ссылка на GH Pages https://tatianawansiedler.github.io/fetch_get_products/
+
 function fetchProducts(url) {
     fetch(url)
         .then(resp => resp.json())
