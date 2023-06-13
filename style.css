@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#root {
+  max-width: 1200px;
+  margin: 30px auto;
+}
+.products_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: auto;
+  gap: 30px;
+}
+.product_item {
+  padding: 15px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.product_image {
+  width: 90%;
+  height: 200px;
+  align-self: center;
+  object-fit: contain;
+}
+.product_rating {
+  align-self: center;
+}
+.active {
+  color: orange;
+}
+.fa-star {
+  padding: 5px;
+}
